@@ -46,7 +46,7 @@ function gallerySlide(e) {
 	const computedStyle = window.getComputedStyle(gallery);
 	const rightValue = computedStyle.getPropertyValue("right");
 
-	if (e.currentTarget.id === "arrow-left") {
+	if (e.currentTarget.id === "arrow-left-mobile" || e.currentTarget.id === "arrow-left-standard") {
 		if (parseFloat(rightValue) > convertViewportWidthToPixel(0)) {
 			gallerySlideIsTransitioning = true;
 			gallery.style.right = `${
@@ -57,12 +57,14 @@ function gallerySlide(e) {
 			}, 500);
 		}
 		if (parseFloat(rightValue) === convertViewportWidthToPixel(600)) {
-			document.getElementById("arrow-right").style.opacity = "1";
+			document.getElementById("arrow-right-mobile").style.opacity = "1";
+			document.getElementById("arrow-right-standard").style.opacity = "1";
 		}
 		if (parseFloat(rightValue) === convertViewportWidthToPixel(100)) {
-			document.getElementById("arrow-left").style.opacity = "0.25";
+			document.getElementById("arrow-left-mobile").style.opacity = "0.25";
+			document.getElementById("arrow-left-standard").style.opacity = "0.25";
 		}
-	} else if (e.currentTarget.id === "arrow-right") {
+	} else if (e.currentTarget.id === "arrow-right-mobile" || e.currentTarget.id === "arrow-right-standard") {
 		if (parseFloat(rightValue) < convertViewportWidthToPixel(600)) {
 			gallerySlideIsTransitioning = true;
 			gallery.style.right = `${
@@ -73,14 +75,16 @@ function gallerySlide(e) {
 			}, 500);
 		}
 		if (parseFloat(rightValue) === convertViewportWidthToPixel(0)) {
-			document.getElementById("arrow-left").style.opacity = "1";
+			document.getElementById("arrow-left-mobile").style.opacity = "1";
+			document.getElementById("arrow-left-standard").style.opacity = "1";
 		}
 		if (parseFloat(rightValue) === convertViewportWidthToPixel(500)) {
-			document.getElementById("arrow-right").style.opacity = "0.25";
+			document.getElementById("arrow-right-mobile").style.opacity = "0.25";
+			document.getElementById("arrow-right-standard").style.opacity = "0.25";
 		}
 	}
 }
-
+  
 function scrollToStart(e) {
 	document.getElementById("hero-section").scrollIntoView(true);
     closeMenu();
@@ -98,9 +102,12 @@ function scrollToWhy(e) {
     closeMenu();
 }
 
+
 document
 	.getElementById("header-burger-container")
 	.addEventListener("click", handleMenuClick);
 
-document.getElementById("arrow-left").addEventListener("click", gallerySlide);
-document.getElementById("arrow-right").addEventListener("click", gallerySlide);
+document.getElementById("arrow-left-mobile").addEventListener("click", gallerySlide);
+document.getElementById("arrow-right-mobile").addEventListener("click", gallerySlide);
+document.getElementById("arrow-right-standard").addEventListener("click", gallerySlide);
+document.getElementById("arrow-left-standard").addEventListener("click", gallerySlide);

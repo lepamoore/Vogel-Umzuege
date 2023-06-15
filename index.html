@@ -22,8 +22,10 @@
                 </a>
             </div>
             <div class="header-burger-container" id="header-burger-container">
-                <img src="./assets/Logos/burger.svg" alt="Open the Menu" class="header-burger-icon" id="header-burger-icon">
-                <img src="./assets/Logos/cross.svg" alt="Open the Menu" class="header-cross-icon" id="header-cross-icon">
+                <img src="./assets/Logos/burger.svg" alt="Open the Menu" class="header-burger-icon"
+                    id="header-burger-icon">
+                <img src="./assets/Logos/cross.svg" alt="Open the Menu" class="header-cross-icon"
+                    id="header-cross-icon">
             </div>
             <nav id="nav">
                 <div class="nav-link-container" onclick="scrollToStart()">
@@ -42,7 +44,9 @@
                     <span class="nav-link nav-text" href="#">Warum wir?</span>
                 </div>
                 <div class="nav-button-container">
-                    <button class="nav-button first-level-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin vereinbaren</button>
+                    <button class="nav-button first-level-button"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
+                        vereinbaren</button>
                 </div>
             </nav>
         </div>
@@ -54,14 +58,21 @@
                 <h1 class="h1">Ihr Partner<br />für Umzüge in Köln!</h1>
             </div>
             <div class="hero-section-button-container">
-                <button class="second-level-button" id="hero-secondary-button" onclick="scrollToAbout()">Mehr erfahren</button>
-                <button class="first-level-button" id="hero-first-level-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin vereinbaren</button>
+                <button class="second-level-button" id="hero-secondary-button" onclick="scrollToAbout()">Mehr
+                    erfahren</button>
+                <button class="first-level-button" id="hero-first-level-button-mobile"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
+                    vereinbaren</button>
+                <button class="first-level-button" id="hero-first-level-button-standard"
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Kostenloses
+                    Beratungsgespräch vereinbaren</button>
             </div>
-            <div class="hero-section-bg-img-container">
-                <div class="hero-section-bg-img-tablet-gradient">
+            <div class="hero-section-bg-img-outer-container">
+                <div class="hero-section-bg-img-inner-container">
                     <img src="./assets/Desktop/Familie.webp" alt="Eine Familie zieht ein und hängt ein Bild auf."
                         class="hero-section-bg-img">
                     <div class="hero-section-top-gradient"></div>
+                    <div class="hero-section-side-gradient"></div>
                 </div>
             </div>
             <img src="./assets/Logos/sky;line.png" alt="Silluette der Kölner Skyline." id="skyline-img">
@@ -69,76 +80,114 @@
         <section class="section-two" id="section-two">
             <h2 class="section-two-heading">Über uns</h2>
             <div class="section-two-snippet section-two-snippet-one">
-                <img src="./assets/Mobile/about-us-1-mobile.webp" alt="Kartons in einer Lagerhalle."
-                    class="section-two-image">
-                <h3 class="section-two-subheading">Vogel Umzüge - <br />Festpreis zum Bestpreis</h3>
-                <p class="section-two-paragraph ">Ob ein Privatumzug vor der Tür steht oder der Sie einen Firmenumzug
-                    planen. Mit Vogel Umzüge sind
-                    Sie auf der sicheren Seite.
-                    <br /><br />
-                    Wir sind Ihr zuverlässiger und preisgünstiger Ansprechpartner für Umzüge aller Art mit
-                    Bestpreisgarantie. Die erfahrenen Möbelpacker und Umzugsservice-Berater von Vogel Umzüge helfen
-                    Ihnen weiter, egal ob Umzug, Einlagerung oder Entrümpelung in Köln, Umgebung oder ganz
-                    Deutschland.
-                    <br /><br />
-                    Wir sind ein kleines inhabergeführtes Umzugsunternehmen und stehen für unseren guten Namen. Auf
-                    uns können Sie sich zu 100% verlassen und das zu einem fairen Festpreis. Egal, ob Umzug, Transport
-                    oder Entsorgung, Vogel Umzüge ist immer für Sie da.
-                    <br /><br />
-                    Wir kümmern uns um das Ein- und Auspacken Ihrer Einrichtungsgegenstände oder Büromöbel, den
-                    sicheren Transport und anfallende Montagearbeiten. Dabei gehen wir mit Ihrem Hab und Gut stets so
-                    sorgfältig um, als sei es unser eigenes.
-                    <br /><br />
-                    Und auch Entsorgungen nehmen wir gewissenhaft und umweltfreundlich vor. Akten und Dokumente werden
-                    von uns vertraulich und fachgerecht entsorgt.
-                </p>
+                <picture>
+                    <source media="(min-width:767px)" srcset="./assets/Desktop/about-us-1-tablet.webp">
+                    <img src="./assets/Mobile/about-us-1-mobile.webp" alt="Kartons in einer Lagerhalle."
+                        class="section-two-image section-two-image-right">
+                </picture>
+                <div class="section-two-text-container">
+                    <h3 class="section-two-subheading">Vogel Umzüge - <br />Festpreis zum Bestpreis</h3>
+                    <p class="section-two-paragraph ">Ob ein Privatumzug vor der Tür steht oder der Sie einen
+                        Firmenumzug
+                        planen. Mit Vogel Umzüge sind
+                        Sie auf der sicheren Seite.
+                        <br /><br />
+                        Wir sind Ihr zuverlässiger und preisgünstiger Ansprechpartner für Umzüge aller Art mit
+                        Bestpreisgarantie. Die erfahrenen Möbelpacker und Umzugsservice-Berater von Vogel Umzüge
+                        helfen
+                        Ihnen weiter, egal ob Umzug, Einlagerung oder Entrümpelung in Köln, Umgebung oder ganz
+                        Deutschland.
+                        <br /><br />
+                        Wir sind ein kleines inhabergeführtes Umzugsunternehmen und stehen für unseren guten Namen.
+                        Auf
+                        uns können Sie sich zu 100% verlassen und das zu einem fairen Festpreis. Egal, ob Umzug,
+                        Transport
+                        oder Entsorgung, Vogel Umzüge ist immer für Sie da.
+                        <br /><br />
+                        Wir kümmern uns um das Ein- und Auspacken Ihrer Einrichtungsgegenstände oder Büromöbel, den
+                        sicheren Transport und anfallende Montagearbeiten. Dabei gehen wir mit Ihrem Hab und Gut stets
+                        so
+                        sorgfältig um, als sei es unser eigenes.
+                        <br /><br />
+                        Und auch Entsorgungen nehmen wir gewissenhaft und umweltfreundlich vor. Akten und Dokumente
+                        werden
+                        von uns vertraulich und fachgerecht entsorgt.
+                    </p>
+                </div>
             </div>
             <div class="section-two-snippet section-two-snippet-two">
-                <img src="./assets/Mobile/about-us-2-mobile.webp" alt="Kartons und Bücher auf einem Schreibtisch."
-                    class="section-two-image">
-                <h3 class="section-two-subheading">Umzugsservice - <br />preiswert & zuverlässig</h3>
-                <p class="section-two-paragraph">
-                    Ein Umzug ist oft viel Arbeit.
-                    <br /><br />
-                    Da ist es gut, wenn man ein Umzugsunternehmen an der Seite hat, dass sich professionell und
-                    zuverlässig um alles kümmert.
-                    <br /><br />
+                <picture>
+                    <source media="(min-width:767px)" srcset="./assets/Desktop/about-us-2-tablet.webp">
+                    <img src="./assets/Mobile/about-us-2-mobile.webp" alt="Kartons und Bücher auf einem Schreibtisch."
+                        class="section-two-image section-two-image-left">
+                </picture>
+                <div class="section-two-text-container">
+                    <h3 class="section-two-subheading section-two-subheading-right">Umzugsservice - <br />preiswert &
+                        zuverlässig</h3>
+                    <p class="section-two-paragraph section-two-paragraph-right">
+                        Ein Umzug ist oft viel Arbeit.
+                        <br /><br />
+                        Da ist es gut, wenn man ein Umzugsunternehmen an der Seite hat, dass sich professionell und
+                        zuverlässig um alles kümmert.
+                        <br /><br />
 
-                    Wir von Vogel Umzüge kümmern uns mit unserem Umzugsservice schnell und günstig um Ihren Umzug in
-                    Köln. Dabei bringen wir unsere langjährige Erfahrung und Kompetenz ein, damit Sie sich entspannen
-                    können.
-                    <br /><br />
+                        Wir von Vogel Umzüge kümmern uns mit unserem Umzugsservice schnell und günstig um Ihren Umzug
+                        in
+                        Köln. Dabei bringen wir unsere langjährige Erfahrung und Kompetenz ein, damit Sie sich
+                        entspannen
+                        können.
+                        <br /><br />
 
-                    Egal, ob Umzug, Entrümpelung oder Einlagerung. Egal ob in Köln, Deutschland oder ganz NRW, Unser
-                    Ziel ist es, Ihr Anliegen so schnell, angenehm und unkompliziert wie möglich durchzuführen.
-                    <br /><br />
+                        Egal, ob Umzug, Entrümpelung oder Einlagerung. Egal ob in Köln, Deutschland oder ganz NRW,
+                        Unser
+                        Ziel ist es, Ihr Anliegen so schnell, angenehm und unkompliziert wie möglich durchzuführen.
+                        <br /><br />
 
-                    Mit Bestpreisgarantie.
-                </p>
+                        Mit Bestpreisgarantie.
+                    </p>
+                </div>
             </div>
             <div class="section-two-snippet section-two-snippet-three">
-                <img src="./assets/Mobile/about-us-3-mobile.webp" alt="Kartons vor einer Wand."
-                    class="section-two-image">
-                <h3 class="section-two-subheading">Unser Rundum-Sorglos-Paket</h3>
-                <p class="section-two-paragraph">Privat- oder Firmenumzug, ein Umzug ist immer mit Planung und Stress
-                    verbunden. Bei uns können Sie sich auf jahrelange Erfahrung und eine fachgerechte Beratung und
-                    Planung verlassen.
-                    <br /><br />
-                    Das beginnt mit dem Einrichten eine Halteverbotszone, damit die Suche eines geeigneten Parkplatzes
-                    und unnötige Zusatzstrecke beim Transport vermieden werden und geht über die fachgerechte
-                    Verpackung und Beladung, damit ihr Hab- und Gut sicher ankommt.
-                    <br /><br />
+                <picture>
+                    <source media="(min-width:767px)" srcset="./assets/Desktop/about-us-3-tablet.webp">
+                    <img src="./assets/Mobile/about-us-3-mobile.webp" alt="Kartons vor einer Wand."
+                        class="section-two-image section-two-image-right">
+                </picture>
+                <div class="section-two-text-container">
 
-                    Dabei gehen wir bei Vogel Umzüge nach einem festen Plan vor und arbeiten ausschließlich mit
-                    Fachkräften, die Ihren Namen auch verdienen.
-                    <br /><br />
+                    <h3 class="section-two-subheading">Unser Rundum-Sorglos-Paket</h3>
+                    <p class="section-two-paragraph">Privat- oder Firmenumzug, ein Umzug ist immer mit Planung und
+                        Stress
+                        verbunden. Bei uns können Sie sich auf jahrelange Erfahrung und eine fachgerechte Beratung und
+                        Planung verlassen.
+                        <br /><br />
+                        Das beginnt mit dem Einrichten eine Halteverbotszone, damit die Suche eines geeigneten
+                        Parkplatzes
+                        und unnötige Zusatzstrecke beim Transport vermieden werden und geht über die fachgerechte
+                        Verpackung und Beladung, damit ihr Hab- und Gut sicher ankommt.
+                        <br /><br />
 
-                    Neben Umzug und Transport unterstützt Sie Vogel Umzüge auch bei Haushalts- auflösungen,
-                    Entrümpelungen, Kleintransporten und Einlagerungen in Köln und Umgebung
-                </p>
+                        Dabei gehen wir bei Vogel Umzüge nach einem festen Plan vor und arbeiten ausschließlich mit
+                        Fachkräften, die Ihren Namen auch verdienen.
+                        <br /><br />
+
+                        Neben Umzug und Transport unterstützt Sie Vogel Umzüge auch bei Haushalts- auflösungen,
+                        Entrümpelungen, Kleintransporten und Einlagerungen in Köln und Umgebung
+                    </p>
+                </div>
             </div>
         </section>
         <section class="section-three" id="section-three">
+            <div id="arrow-left-standard">
+                <img src="./assets/Logos/arrow-left.svg"
+                    alt="Ein nach links gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren."
+                    class="standard-arrows">
+            </div>
+            <div id="arrow-right-standard">
+                <img src="./assets/Logos/arrow-right.svg"
+                    alt="Ein nach rechts gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren."
+                    class="standard-arrows">
+            </div>
             <h2 class="section-three-heading">Unsere Leistungen</h2>
             <p class="section-three-subheading">in Köln und NRW</p>
             <div class="section-three-card-list" id="section-three-card-list">
@@ -146,6 +195,7 @@
                     <div class="card-img-container-gradient">
                         <img src="./assets/Desktop/vogel-umzuege.webp" alt="LKW von Vogel Umzüge"
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
                     </div>
                     <h3 class="section-three-card-heading">Privatumzüge</h3>
                     <p class="section-three-card-paragraph">Wir helfen Ihnen bei Ihrem Umzug in Köln!
@@ -156,6 +206,8 @@
                     <div class="card-img-container-gradient">
                         <img src="./assets/Desktop/hund.webp" alt="Ein Hund der aus einem Karton herausschaut."
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
+
                     </div>
                     <h3 class="section-three-card-heading">Entrümpelungen</h3>
                     <p class="section-three-card-paragraph">Wir von Vogel Umzüge in Köln helfen Ihnen bei der
@@ -167,6 +219,8 @@
                         <img src="./assets/Desktop/kirsch-lkw.webp"
                             alt="Ein Transporter der durch eine Allee, voll blühender Kirschbäume, fährt."
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
+
                     </div>
                     <h3 class="section-three-card-heading">Kleintransporte</h3>
                     <p class="section-three-card-paragraph">Vogel Umzüge übernimmt auch Kleintransporte aller Art für
@@ -177,6 +231,8 @@
                     <div class="card-img-container-gradient">
                         <img src="./assets/Desktop/kartons.webp" alt="Ein Raum voll mit Kartons."
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
+
                     </div>
                     <h3 class="section-three-card-heading">Einlagerungen</h3>
                     <p class="section-three-card-paragraph">Ob Sie nun vorübergehend ins Ausland gehen oder die Zeit
@@ -187,6 +243,8 @@
                     <div class="card-img-container-gradient">
                         <img src="./assets/Desktop/vogel-umzuege.webp" alt="Ein LKW von Vogel Umzüge."
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
+
                     </div>
                     <h3 class="section-three-card-heading">Firmenumzüge</h3>
                     <p class="section-three-card-paragraph">Wir planen Ihren Büroumzug in Köln und führen ihn
@@ -197,6 +255,8 @@
                     <div class="card-img-container-gradient">
                         <img src="./assets/Desktop/schredder.webp" alt="Ein Haufen geschredderter Dokumente."
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
+
                     </div>
                     <h3 class="section-three-card-heading">Aktenvernichtung</h3>
                     <p class="section-three-card-paragraph">Ihre Unterlagen sind bei uns sicher und werden nach strengen
@@ -207,6 +267,8 @@
                     <div class="card-img-container-gradient">
                         <img src="./assets/Desktop/messed.webp" alt="Ein chaotisches und unordentliches Arbeitszimmer."
                             class="section-threecard-image">
+                        <div class="actual-section-three-gradient"></div>
+
                     </div>
                     <h3 class="section-three-card-heading">Haushaltsauflösungen</h3>
                     <p class="section-three-card-paragraph">Nach vorheriger Besprechung machen wir uns an das
@@ -214,12 +276,12 @@
                     <p class="section-three-card-link nav-text">Mehr erfahren...</p>
                 </div>
             </div>
-            <div class="arrows-container">
-                <div id="arrow-left">
+            <div class="arrows-container-mobile">
+                <div id="arrow-left-mobile">
                     <img src="./assets/Logos/arrow-left.svg"
                         alt="Ein nach links gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren.">
                 </div>
-                <div id="arrow-right">
+                <div id="arrow-right-mobile">
                     <img src="./assets/Logos/arrow-right.svg"
                         alt="Ein nach rechts gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren.">
                 </div>
@@ -283,30 +345,63 @@
                         <h2 class="phone-number h2">0176 / 876 676 12</h2>
                     </a>
                 </div>
-                <button class="second-level-button section-five-buttons">Anrufen</button>
-                <a class="phone-link" href="https://wa.me/4917687667612" target="_blank"><button class="second-level-button section-five-buttons">Auf WhatsApp chatten</button></a>
-                <button class="first-level-button section-five-buttons" id="section-5-first-level-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin vereinbaren</button>
+                <div class="section-five-all-button-container">
+
+                    <div class="section-five-secondary-button-container">
+                        <button class="second-level-button section-five-buttons">Anrufen</button>
+                        <a class="phone-link" href="https://wa.me/4917687667612" target="_blank"><button
+                                class="second-level-button section-five-buttons">Auf WhatsApp chatten</button></a>
+                    </div>
+                    <div class="section-five-primary-button-container">
+
+                        <button class="first-level-button section-five-buttons" id="section-5-first-level-button-mobile"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
+                            vereinbaren</button>
+                        <button class="first-level-button section-five-buttons"
+                            id="section-5-first-level-button-standard"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Kostenloses
+                            Beratungsgespräch vereinbaren</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer-logo-container">
-            <img src="./assets/Logos/Logo in weiss.png" alt="Vogel Umzüge Logo." id="footer-logo">
-        </div>
-        <div class="link-lists-container">
-            <div class="main-link-list-container">
-                <ul class="main-link-list">
-                    <li class="footer-links nav-text" onclick="scrollToStart()">START</li>
-                    <li class="footer-links nav-text" onclick="scrollToAbout()">ÜBER UNS</li>
-                    <li class="footer-links nav-text" onclick="scrollToServices()">LEISTUNGEN</li>
-                    <li class="footer-links nav-text" onclick="scrollToWhy()">WARUM WIR?</li>
-                    <li class="footer-links nav-text" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">TERMIN VEREINBAREN</li>
-                </ul>
+        <div class="footer-above-hr">
+            <div class="footer-logo-container">
+                <img src="./assets/Logos/Logo in weiss.png" alt="Vogel Umzüge Logo." id="footer-logo">
             </div>
-            <div class="second-link-list-container">
+            <div class="link-lists-container">
+                <div class="main-link-list-container">
+                    <ul class="main-link-list">
+                        <li class="footer-links nav-text" onclick="scrollToStart()">START</li>
+                        <li class="footer-links nav-text" onclick="scrollToAbout()">ÜBER UNS</li>
+                        <li class="footer-links nav-text" onclick="scrollToServices()">LEISTUNGEN</li>
+                        <li class="footer-links nav-text" onclick="scrollToWhy()">WARUM WIR?</li>
+                        <li class="footer-links nav-text"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">
+                            TERMIN VEREINBAREN</li>
+                    </ul>
+                </div>
+                <div class="second-link-list-container mobile">
+                    <ul class="second-link-list">
+                        <a href="./datenschutz.html" class="phone-link">
+                            <li class="footer-links nav-text">DATENSCHUTZ</li>
+                        </a>
+                        <a href="./impressum.html" class="phone-link">
+                            <li class="footer-links nav-text">IMPRESSUM</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-link-list-container tablet">
                 <ul class="second-link-list">
-                    <a href="./datenschutz.html" class="phone-link"><li class="footer-links nav-text">DATENSCHUTZ</li></a>
-                    <a href="./impressum.html" class="phone-link"><li class="footer-links nav-text">IMPRESSUM</li></a>
+                    <a href="./datenschutz.html" class="phone-link">
+                        <li class="footer-links nav-text">DATENSCHUTZ</li>
+                    </a>
+                    <a href="./impressum.html" class="phone-link">
+                        <li class="footer-links nav-text">IMPRESSUM</li>
+                    </a>
                 </ul>
             </div>
         </div>
