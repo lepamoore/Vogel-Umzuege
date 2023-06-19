@@ -22,25 +22,30 @@
                 </a>
             </div>
             <div class="header-burger-container" id="header-burger-container">
-                <img src="./assets/Logos/burger.svg" alt="Open the Menu" class="header-burger-icon"
+                <img role="button" src="./assets/Logos/burger.svg" alt="Open the Menu" class="header-burger-icon"
                     id="header-burger-icon">
-                <img src="./assets/Logos/cross.svg" alt="Open the Menu" class="header-cross-icon"
+                <img role="button" src="./assets/Logos/cross.svg" alt="Open the Menu" class="header-cross-icon"
                     id="header-cross-icon">
             </div>
             <nav id="nav">
-                <div class="nav-link-container" onclick="scrollToStart()">
+                <div role="button" class="nav-link-container nav-link-container-start" onclick="scrollToStart()">
                     <span class="nav-link nav-text" href="#">Start</span>
                 </div>
                 <hr class="nav-hr" />
-                <div class="nav-link-container" onclick="scrollToAbout()">
+                <div role="button" class="nav-link-container" onclick="scrollToAbout()">
                     <span class="nav-link nav-text" href="#">Über uns</span>
                 </div>
                 <hr class="nav-hr" />
-                <div class="nav-link-container" onclick="scrollToServices()">
+                <div role="button" class="nav-link-container" onclick="scrollToServices()">
                     <span class="nav-link nav-text" href="#">Leistungen</span>
                 </div>
+                <div class="nav-logo-container">
+                    <a href="./index.html">
+                        <img src="./assets/Logos/Logo Quadrat.png" alt="Logo" class="nav-logo">
+                    </a>
+                </div>
                 <hr class="nav-hr" />
-                <div class="nav-link-container" onclick="scrollToWhy()">
+                <div role="button" class="nav-link-container" onclick="scrollToWhy()">
                     <span class="nav-link nav-text" href="#">Warum wir?</span>
                 </div>
                 <div class="nav-button-container">
@@ -75,12 +80,13 @@
                     <div class="hero-section-side-gradient"></div>
                 </div>
             </div>
-            <img src="./assets/Logos/sky;line.png" alt="Silluette der Kölner Skyline." id="skyline-img">
+            <img src="./assets/Logos/skyline.png" alt="Silluette der Kölner Skyline." id="skyline-img">
         </section>
         <section class="section-two" id="section-two">
             <h2 class="section-two-heading">Über uns</h2>
             <div class="section-two-snippet section-two-snippet-one">
                 <picture>
+                    <source media="(min-width:1024px)" srcset="./assets/Desktop/about-us-1.webp">
                     <source media="(min-width:767px)" srcset="./assets/Desktop/about-us-1-tablet.webp">
                     <img src="./assets/Mobile/about-us-1-mobile.webp" alt="Kartons in einer Lagerhalle."
                         class="section-two-image section-two-image-right">
@@ -117,6 +123,7 @@
             </div>
             <div class="section-two-snippet section-two-snippet-two">
                 <picture>
+                    <source media="(min-width:1024px)" srcset="./assets/Desktop/about-us-2.webp">
                     <source media="(min-width:767px)" srcset="./assets/Desktop/about-us-2-tablet.webp">
                     <img src="./assets/Mobile/about-us-2-mobile.webp" alt="Kartons und Bücher auf einem Schreibtisch."
                         class="section-two-image section-two-image-left">
@@ -149,6 +156,7 @@
             </div>
             <div class="section-two-snippet section-two-snippet-three">
                 <picture>
+                    <source media="(min-width:1024px)" srcset="./assets/Desktop/about-us-3.webp">
                     <source media="(min-width:767px)" srcset="./assets/Desktop/about-us-3-tablet.webp">
                     <img src="./assets/Mobile/about-us-3-mobile.webp" alt="Kartons vor einer Wand."
                         class="section-two-image section-two-image-right">
@@ -178,12 +186,12 @@
             </div>
         </section>
         <section class="section-three" id="section-three">
-            <div id="arrow-left-standard">
+            <div role="button" id="arrow-left-standard">
                 <img src="./assets/Logos/arrow-left.svg"
                     alt="Ein nach links gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren."
                     class="standard-arrows">
             </div>
-            <div id="arrow-right-standard">
+            <div role="button" id="arrow-right-standard">
                 <img src="./assets/Logos/arrow-right.svg"
                     alt="Ein nach rechts gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren."
                     class="standard-arrows">
@@ -277,11 +285,11 @@
                 </div>
             </div>
             <div class="arrows-container-mobile">
-                <div id="arrow-left-mobile">
+                <div role="button" id="arrow-left-mobile">
                     <img src="./assets/Logos/arrow-left.svg"
                         alt="Ein nach links gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren.">
                 </div>
-                <div id="arrow-right-mobile">
+                <div role="button" id="arrow-right-mobile">
                     <img src="./assets/Logos/arrow-right.svg"
                         alt="Ein nach rechts gerichteter Pfeil, um durch die Gallerie von Leistungen zu navigieren.">
                 </div>
@@ -289,53 +297,57 @@
         </section>
         <section class="section-four" id="section-four">
             <h2 class="section-four-heading h2">Weshalb Sie uns wählen sollten.</h2>
-            <div class="section-four-card" id="section-four-card-one">
-                <div class="section-four-img-container">
-                    <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
+            <div class="section-four-cards-container">
+                <div class="section-four-card" id="section-four-card-one">
+                    <div class="section-four-img-container">
+                        <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
+                    </div>
+                    <div class="section-four-card-text-container">
+                        <h3 class="section-four-card-heading">Festpreis zum Bestpreis</h3>
+                        <p class="section-four-card-paragraph">Kostenlose Besichtigung und Angebot ohne versteckte
+                            Kosten.
+                        </p>
+                    </div>
                 </div>
-                <div class="section-four-card-text-container">
-                    <h3 class="section-four-card-heading">Festpreis zum Bestpreis</h3>
-                    <p class="section-four-card-paragraph">Kostenlose Besichtigung und Angebot ohne versteckte Kosten.
-                    </p>
+                <div class="section-four-card" id="section-four-card-two">
+                    <div class="section-four-img-container">
+                        <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
+                    </div>
+                    <div class="section-four-card-text-container">
+                        <h3 class="section-four-card-heading">Sorgfältige Planung</h3>
+                        <p class="section-four-card-paragraph">Wir planen Ihren Umzug sorgfältig und professionell.</p>
+                    </div>
+                </div>
+                <div class="section-four-card" id="section-four-card-three">
+                    <div class="section-four-img-container">
+                        <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
+                    </div>
+                    <div class="section-four-card-text-container">
+                        <h3 class="section-four-card-heading">Umfangreiche Versicherung</h3>
+                        <p class="section-four-card-paragraph">Wir transportieren Ihr Umzugsgut voll versichert.</p>
+                    </div>
+                </div>
+                <div class="section-four-card" id="section-four-card-four">
+                    <div class="section-four-img-container">
+                        <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
+                    </div>
+                    <div class="section-four-card-text-container">
+                        <h3 class="section-four-card-heading">Individueller Service</h3>
+                        <p class="section-four-card-paragraph">Auf Wunsch umfangreiche
+                            Zusatzservices.</p>
+                    </div>
+                </div>
+                <div class="section-four-card">
+                    <div class="section-four-img-container">
+                        <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
+                    </div>
+                    <div class="section-four-card-text-container">
+                        <h3 class="section-four-card-heading">Schnelle Termine</h3>
+                        <p class="section-four-card-paragraph">Wir bieten kurzfristig flexible Termine.</p>
+                    </div>
                 </div>
             </div>
-            <div class="section-four-card" id="section-four-card-two">
-                <div class="section-four-img-container">
-                    <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
-                </div>
-                <div class="section-four-card-text-container">
-                    <h3 class="section-four-card-heading">Sorgfältige Planung</h3>
-                    <p class="section-four-card-paragraph">Wir planen Ihren Umzug sorgfältig und professionell.</p>
-                </div>
-            </div>
-            <div class="section-four-card" id="section-four-card-three">
-                <div class="section-four-img-container">
-                    <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
-                </div>
-                <div class="section-four-card-text-container">
-                    <h3 class="section-four-card-heading">Umfangreiche Versicherung</h3>
-                    <p class="section-four-card-paragraph">Wir transportieren Ihr Umzugsgut voll versichert.</p>
-                </div>
-            </div>
-            <div class="section-four-card" id="section-four-card-four">
-                <div class="section-four-img-container">
-                    <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
-                </div>
-                <div class="section-four-card-text-container">
-                    <h3 class="section-four-card-heading">Individueller Service</h3>
-                    <p class="section-four-card-paragraph">Auf Wunsch umfangreiche
-                        Zusatzservices.</p>
-                </div>
-            </div>
-            <div class="section-four-card">
-                <div class="section-four-img-container">
-                    <img src="./assets/Logos/checkmark.svg" alt="Häkchen-Symbol" class="checkmark">
-                </div>
-                <div class="section-four-card-text-container">
-                    <h3 class="section-four-card-heading">Schnelle Termine</h3>
-                    <p class="section-four-card-paragraph">Wir bieten kurzfristig flexible Termine.</p>
-                </div>
-            </div>
+
         </section>
         <section class="section-five">
             <div class="section-five-inner-container">
@@ -345,22 +357,25 @@
                         <h2 class="phone-number h2">0176 / 876 676 12</h2>
                     </a>
                 </div>
-                <div class="section-five-all-button-container">
+                <div class="section-five-all-buttons-outer-wrapper">
+                    <div class="section-five-all-button-container">
 
-                    <div class="section-five-secondary-button-container">
-                        <button class="second-level-button section-five-buttons">Anrufen</button>
-                        <a class="phone-link" href="https://wa.me/4917687667612" target="_blank"><button
-                                class="second-level-button section-five-buttons">Auf WhatsApp chatten</button></a>
-                    </div>
-                    <div class="section-five-primary-button-container">
+                        <div class="section-five-secondary-button-container">
+                            <button class="second-level-button section-five-buttons">Anrufen</button>
+                            <a class="phone-link" href="https://wa.me/4917687667612" target="_blank"><button
+                                    class="second-level-button section-five-buttons">Auf WhatsApp chatten</button></a>
+                        </div>
+                        <div class="section-five-primary-button-container">
 
-                        <button class="first-level-button section-five-buttons" id="section-5-first-level-button-mobile"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
-                            vereinbaren</button>
-                        <button class="first-level-button section-five-buttons"
-                            id="section-5-first-level-button-standard"
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Kostenloses
-                            Beratungsgespräch vereinbaren</button>
+                            <button class="first-level-button section-five-buttons"
+                                id="section-5-first-level-button-mobile"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
+                                vereinbaren</button>
+                            <button class="first-level-button section-five-buttons"
+                                id="section-5-first-level-button-standard"
+                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Kostenloses
+                                Beratungsgespräch vereinbaren</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,22 +389,22 @@
             <div class="link-lists-container">
                 <div class="main-link-list-container">
                     <ul class="main-link-list">
-                        <li class="footer-links nav-text" onclick="scrollToStart()">START</li>
-                        <li class="footer-links nav-text" onclick="scrollToAbout()">ÜBER UNS</li>
-                        <li class="footer-links nav-text" onclick="scrollToServices()">LEISTUNGEN</li>
-                        <li class="footer-links nav-text" onclick="scrollToWhy()">WARUM WIR?</li>
-                        <li class="footer-links nav-text"
+                        <li class="footer-links nav-text" role="button" onclick="scrollToStart()">START</li>
+                        <li class="footer-links nav-text" role="button" onclick="scrollToAbout()">ÜBER UNS</li>
+                        <li class="footer-links nav-text" role="button" onclick="scrollToServices()">LEISTUNGEN</li>
+                        <li class="footer-links nav-text" role="button" onclick="scrollToWhy()">WARUM WIR?</li>
+                        <li class="footer-links nav-text" role="button"
                             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">
                             TERMIN VEREINBAREN</li>
                     </ul>
                 </div>
-                <div class="second-link-list-container mobile">
+                <div class="second-link-list-container mobile desktop">
                     <ul class="second-link-list">
                         <a href="./datenschutz.html" class="phone-link">
-                            <li class="footer-links nav-text">DATENSCHUTZ</li>
+                            <li role="button" class="footer-links nav-text">DATENSCHUTZ</li>
                         </a>
                         <a href="./impressum.html" class="phone-link">
-                            <li class="footer-links nav-text">IMPRESSUM</li>
+                            <li role="button" class="footer-links nav-text">IMPRESSUM</li>
                         </a>
                     </ul>
                 </div>
@@ -397,10 +412,10 @@
             <div class="second-link-list-container tablet">
                 <ul class="second-link-list">
                     <a href="./datenschutz.html" class="phone-link">
-                        <li class="footer-links nav-text">DATENSCHUTZ</li>
+                        <li role="button" class="footer-links nav-text">DATENSCHUTZ</li>
                     </a>
                     <a href="./impressum.html" class="phone-link">
-                        <li class="footer-links nav-text">IMPRESSUM</li>
+                        <li role="button" class="footer-links nav-text">IMPRESSUM</li>
                     </a>
                 </ul>
             </div>
