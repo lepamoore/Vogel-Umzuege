@@ -10,7 +10,7 @@
     <script src="./index.js" defer></script>
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Vogel Umzüge | Köln</title>
 </head>
 
@@ -64,14 +64,20 @@
                 <h1 class="h1">Ihr Partner<br />für Umzüge in Köln!</h1>
             </div>
             <div class="hero-section-button-container">
-                <button class="second-level-button" id="hero-secondary-button" onclick="scrollToAbout()">Mehr
-                    erfahren</button>
-                <button class="first-level-button from-bottom-250" id="hero-first-level-button-mobile"
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
-                    vereinbaren</button>
-                <button class="first-level-button first-level-button-animation" id="hero-first-level-button-standard"
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Kostenloses
-                    Beratungsgespräch vereinbaren</button>
+                <div class="second-level-button-container">
+                    <button class="second-level-button" id="hero-secondary-button" onclick="scrollToAbout()">Mehr
+                        erfahren</button>
+                </div>
+                <div class="first-level-button-animation">
+                    <button class="first-level-button" id="hero-first-level-button-mobile"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
+                        vereinbaren</button>
+                </div>
+                <div class="first-level-button-animation">
+                    <button class="first-level-button" id="hero-first-level-button-standard"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Kostenloses
+                        Beratungsgespräch vereinbaren</button>
+                </div>
             </div>
             <div class="hero-section-bg-img-outer-container">
                 <div class="hero-section-bg-img-inner-container">
@@ -209,7 +215,7 @@
                     <h3 class="section-three-card-heading">Privatumzüge</h3>
                     <p class="section-three-card-paragraph">Wir helfen Ihnen bei Ihrem Umzug in Köln!
                         Von der kostenlosen Besichtigung und Planung bis zum Umzug selbst.</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
                 <div class="section-three-card" id="section-three-card-two">
                     <div class="card-img-container-gradient">
@@ -221,7 +227,7 @@
                     <h3 class="section-three-card-heading">Entrümpelungen</h3>
                     <p class="section-three-card-paragraph">Wir von Vogel Umzüge in Köln helfen Ihnen bei der
                         Entrümpelung und fachgerechten Entsorgung.</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
                 <div class="section-three-card" id="section-three-card-three">
                     <div class="card-img-container-gradient">
@@ -234,7 +240,7 @@
                     <h3 class="section-three-card-heading">Kleintransporte</h3>
                     <p class="section-three-card-paragraph">Vogel Umzüge übernimmt auch Kleintransporte aller Art für
                         Sie. Schnell, zuverlässig, unkompliziert und günstig.</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
                 <div class="section-three-card" id="section-three-card-four">
                     <div class="card-img-container-gradient">
@@ -246,7 +252,7 @@
                     <h3 class="section-three-card-heading">Einlagerungen</h3>
                     <p class="section-three-card-paragraph">Ob Sie nun vorübergehend ins Ausland gehen oder die Zeit
                         zwischen dem Wohnungswechsel überbrücken müssen, wir lagern Ihr Wohnungsinventar ein!</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
                 <div class="section-three-card" id="section-three-card-five">
                     <div class="card-img-container-gradient">
@@ -258,7 +264,7 @@
                     <h3 class="section-three-card-heading">Firmenumzüge</h3>
                     <p class="section-three-card-paragraph">Wir planen Ihren Büroumzug in Köln und führen ihn
                         kompetent und zuverlässig durch.</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
                 <div class="section-three-card" id="section-three-card-six">
                     <div class="card-img-container-gradient">
@@ -270,7 +276,7 @@
                     <h3 class="section-three-card-heading">Aktenvernichtung</h3>
                     <p class="section-three-card-paragraph">Ihre Unterlagen sind bei uns sicher und werden nach strengen
                         Sicherheitsvorgaben fachgerecht entsorgt.</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
                 <div class="section-three-card" id="section-three-card-seven">
                     <div class="card-img-container-gradient">
@@ -282,7 +288,7 @@
                     <h3 class="section-three-card-heading">Haushaltsauflösungen</h3>
                     <p class="section-three-card-paragraph">Nach vorheriger Besprechung machen wir uns an das
                         Entrümpeln und die fachgerechte sowie umweltfreundliche Entsorgung.</p>
-                    <p class="section-three-card-link nav-text">Mehr erfahren...</p>
+                    <p class="section-three-card-link nav-text">...</p>
                 </div>
             </div>
             <div class="arrows-container-mobile">
@@ -362,13 +368,18 @@
                     <div class="section-five-all-button-container">
 
                         <div class="section-five-secondary-button-container">
-                            <button class="second-level-button section-five-buttons">Anrufen</button>
-                            <a class="phone-link" href="https://wa.me/4917687667612" target="_blank"><button
-                                    class="second-level-button section-five-buttons">Auf WhatsApp chatten</button></a>
+                            <div class="second-level-button-container">
+                                <button class="second-level-button section-five-buttons">Anrufen</button>
+                            </div>
+                            <div class="second-level-button-container">
+                                <a class="phone-link" href="https://wa.me/4917687667612" target="_blank"><button
+                                        class="second-level-button section-five-buttons">Auf WhatsApp
+                                        chatten</button></a>
+                            </div>
                         </div>
                         <div class="section-five-primary-button-container">
 
-                            <button class="first-level-button section-five-buttons"
+                            <button class="first-level-button section-five-buttons from-bottom-250"
                                 id="section-5-first-level-button-mobile"
                                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
                                 vereinbaren</button>
@@ -429,10 +440,10 @@
         </div>
     </footer>
     <script>
-        ScrollReveal().reveal('.first-level-button-animation', {delay: 250, origin: 'bottom', distance: '50px', opacity: 0});
-        ScrollReveal().reveal('.from-bottom-250', {delay: 500, origin: 'bottom', distance: '50px', opacity: 0});
-        ScrollReveal().reveal('h2', {delay: 100, origin: 'bottom', distance: '50px', opacity: 0});
-        ScrollReveal().reveal('.second-level-button', {delay: 1000});
+        ScrollReveal().reveal('.first-level-button-animation', { delay: 250, origin: 'bottom', distance: '50px', opacity: 0 });
+        ScrollReveal().reveal('.from-bottom-250', { delay: 500, origin: 'bottom', distance: '50px', opacity: 0 });
+        ScrollReveal().reveal('h2', { delay: 100, origin: 'bottom', distance: '50px', opacity: 0 });
+        ScrollReveal().reveal('.second-level-button-container', { delay: 1000 });
     </script>
 </body>
 

@@ -85,6 +85,14 @@ html {
     font-size: 100%;
 }
 
+button:hover, .footer-links:hover, .nav-link:hover, .nav-logo:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+button, .footer-links, .nav-link, .nav-logo {
+    transition: scale .25s;
+}
+
 header {
     height: 76px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -204,8 +212,12 @@ nav {
     border: none;
     background-color: $Primary400;
     color: $Shade000;
+    transition: scale .5s;
     &:active {
         background-color: $Primary600;
+    }
+    &:hover {
+        scale: 1.1;
     }
 }
 
@@ -217,8 +229,12 @@ nav {
     border: none;
     background-color: $Primary800;
     color: $Shade000;
+    transition: scale .5s;
     &:active {
         background-color: $Primary1000;
+    }
+    &:hover {
+        scale: 1.05;
     }
 }
 
@@ -343,6 +359,7 @@ nav {
 .section-three-card-link {
     color: $Primary000;
     text-decoration: underline;
+    visibility: hidden;
 }
 
 .arrows-container-mobile {
@@ -363,7 +380,10 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    transition: opacity 0.25s;
+    transition: opacity .25s;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 #arrow-left-mobile {
@@ -377,14 +397,25 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 0.25;
-    transition: opacity 0.25s;
+    transition: opacity .25s;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 #arrow-left-standard {
     display: none;
+    transition: opacity .25s;
+    &:hover {
+        cursor: pointer;
+    }
 }
 #arrow-right-standard {
     display: none;
+    transition: opacity .25s;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // Section 4
@@ -406,6 +437,12 @@ nav {
     margin: 0 1rem 2rem 1rem;
     height: 295px;
     text-align: center;
+    transition: background-color .25s, color .25s, border-color .25s;
+    &:hover {
+        background-color: $Primary000;
+        color: $Shade1000;
+        border-color: $Primary000;
+    }
 }
 
 .section-four-img-container {
@@ -698,6 +735,7 @@ footer {
         padding-bottom: 4rem;
     }
 
+
     .section-three-card-heading {
         padding: 0;
     }
@@ -793,11 +831,16 @@ footer {
         width: 44px;
     }
 
+    #section-three-card-one {
+        margin-left: 50vw;
+    }
+
     .section-three-card {
         width: 400px;
         height: 550px;
-        margin: 0 calc((100vw - 400px) / 2);
+        margin: 0 32px;
         padding: 0 1rem;
+        transform: translate(-50%);
     }
 
     //section 4
@@ -888,7 +931,6 @@ footer {
     }
 }
 
-// SECTION 3 AM ENDE
 
 @media screen and (min-width: 1024px) {
     #hero-section,
@@ -993,7 +1035,14 @@ footer {
     }
 
     .section-two-subheading, .section-two-paragraph {
-        padding: 0 2.5rem 2.5rem 4rem;
+        padding: 0 4rem 2.5rem 4rem;
+        left: 50%;
+    }
+
+    .section-two-paragraph {
+        width: 50%;
+        margin: 0;
+        left: 50%;
     }
 
     // section three
