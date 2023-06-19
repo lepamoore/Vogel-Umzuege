@@ -55,7 +55,7 @@ p {
 h1 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin: 16px 0;
+    margin: 1rem 0;
 }
 
 h2,
@@ -82,7 +82,7 @@ body {
 }
 
 html {
-    font-size: 16px;
+    font-size: 100%;
 }
 
 header {
@@ -112,7 +112,7 @@ header {
 .header-logo {
     width: 44px;
     height: 44px;
-    margin: 16px;
+    margin: 1rem;
 }
 
 .header-burger-container {
@@ -124,7 +124,7 @@ header {
 .header-burger-icon {
     height: 44px;
     width: 44px;
-    margin: 16px;
+    margin: 1rem;
     opacity: 1;
 }
 
@@ -143,23 +143,23 @@ nav {
     width: 100vw;
     background-color: $Shade1000;
     text-align: center;
-    padding-top: 24px;
+    padding-top: 1.5rem;
     transition: left 0.5s;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .nav-hr {
-    margin: 0 16px;
+    margin: 0 1rem;
     border: 1px solid $Shade400;
 }
 
 .nav-link {
     display: block;
-    padding: 24px;
+    padding: 1.5rem;
 }
 
 .nav-button-container {
-    padding: 32px 0;
+    padding: 2rem 0;
 }
 
 .nav-button {
@@ -173,10 +173,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 76px 1fr 1.5fr 1fr 2fr 1fr;
-    grid-column-gap: 16px;
+    grid-column-gap: 1rem;
     grid-row-gap: 0px;
     position: relative;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .hero-section-heading-container {
@@ -193,14 +193,14 @@ nav {
 .hero-section-button-container {
     grid-area: 5 / 1 / 6 / 6;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .first-level-button {
     padding: 1rem;
     display: block;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     background-color: $Primary400;
     color: $Shade000;
@@ -213,7 +213,7 @@ nav {
     padding: 1rem;
     display: block;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     background-color: $Primary800;
     color: $Shade000;
@@ -223,7 +223,7 @@ nav {
 }
 
 #hero-secondary-button {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 #hero-first-level-button-standard {
@@ -283,7 +283,7 @@ nav {
 
 .section-two-heading {
     text-align: center;
-    padding-top: 48px;
+    padding-top: 3rem;
 }
 
 .section-two-snippet-two {
@@ -292,23 +292,23 @@ nav {
 
 .section-two-image {
     max-width: none;
-    width: calc(100vw - 32px);
-    margin: 48px 16px 48px 16px;
+    width: calc(100vw - 2rem);
+    margin: 3rem 1rem 3rem 1rem;
 }
 
 .section-two-subheading {
-    padding: 0 16px 32px 16px;
+    padding: 0 1rem 2rem 1rem;
 }
 
 .section-two-paragraph {
-    padding: 0 16px 48px 16px;
+    padding: 0 1rem 3rem 1rem;
 }
 
 //section three
 
 .section-three-heading {
     text-align: center;
-    padding: 48px 0;
+    padding: 3rem 0;
 }
 
 .section-three-subheading {
@@ -336,7 +336,7 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     margin: 0 calc((100vw - 288px) / 2);
-    padding: 16px;
+    padding: 1rem;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
@@ -346,7 +346,7 @@ nav {
 }
 
 .arrows-container-mobile {
-    margin: 24px 0;
+    margin: 1.5rem 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -391,19 +391,19 @@ nav {
 
 .section-four {
     background-color: $Primary800;
-    padding-bottom: 48px;
+    padding-bottom: 3re,;
 }
 
 .section-four-heading {
-    padding: 48px 16px;
+    padding: 3rem 1rem;
     text-align: center;
 }
 
 .section-four-card {
-    width: calc(100vw - 32px);
+    width: calc(100vw - 2rem);
     background-color: $Shade1000;
     border: 1px solid $Shade400;
-    margin: 0 16px 32px 16px;
+    margin: 0 1rem 2rem 1rem;
     height: 295px;
     text-align: center;
 }
@@ -426,7 +426,7 @@ nav {
 //Section 5
 
 .section-five {
-    padding: 32px 0;
+    padding: 2rem 0;
 }
 
 .section-five-phone-container {
@@ -447,11 +447,11 @@ nav {
 }
 
 .section-five-buttons {
-    margin: 32px auto;
+    margin: 2rem auto;
 }
 
 #section-5-first-level-button-mobile {
-    width: calc(100vw - 32px);
+    width: calc(100vw - 2rem);
 }
 
 #section-5-first-level-button-standard {
@@ -477,7 +477,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 48px 0;
+    padding: 3rem 0;
 }
 
 #footer-logo {
@@ -486,21 +486,21 @@ footer {
 }
 
 .footer-links {
-    margin-bottom: 16px;
-    padding-left: 16px;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
     color: $Shade1000;
     font-weight: 700;
     text-decoration: none;
 }
 
 .footer-hr {
-    margin: 24px 16px;
+    margin: 1.5rem 1rem;
     border-color: $Primary200;
 }
 
 .copyright-text {
     display: block;
-    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
     width: 100%;
     text-align: center;
     font-weight: 400;
@@ -561,7 +561,9 @@ footer {
 
     .hero-section {
         grid-template-rows: 100px 0.5fr 1.5fr 1fr 2fr 1fr;
-        margin: 0 32px;
+        padding: 0 2rem;
+        margin: 0;
+        overflow: hidden;
     }
 
     .hero-section-heading-container {
@@ -581,7 +583,7 @@ footer {
     }
 
     #hero-secondary-button {
-        margin-bottom: 32px;
+        margin-bottom: 2rem;
     }
 
     .hero-section-bg-img-outer-container {
@@ -589,7 +591,7 @@ footer {
         bottom: 50%;
         left: 0;
         width: 100vw;
-        transform: translate(-32px, 50%);
+        transform: translateY(50%);
         overflow: hidden;
     }
 
@@ -632,7 +634,7 @@ footer {
         position: absolute;
         bottom: 0;
         left: 0;
-        transform: translate(-32px, 1px);
+        transform: translate(0rem, 0px);
         width: 100vw;
         max-width: none;
         z-index: 2;
@@ -640,12 +642,12 @@ footer {
 
     //section 2
     .section-two-heading {
-        padding-top: 64px;
+        padding-top: 4rem;
     }
 
     .section-two-snippet {
         position: relative;
-        padding: 64px 0;
+        padding: 4rem 0;
         min-height: 761px;
         display: flex;
         align-items: center;
@@ -671,11 +673,11 @@ footer {
     }
 
     .section-two-subheading {
-        padding: 0 32px 32px 32px;
+        padding: 0 1rem 1rem 1rem;
     }
 
     .section-two-paragraph {
-        padding: 0 32px 0 32px;
+        padding: 0 2rem;
         width: 60%;
     }
 
@@ -693,7 +695,7 @@ footer {
 
     .section-three {
         position: relative;
-        padding-bottom: 64px;
+        padding-bottom: 4rem;
     }
 
     .section-three-card-heading {
@@ -751,9 +753,9 @@ footer {
         display: block;
         width: 100%;
         text-align: center;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
-        padding-bottom: 64px;
+        padding-bottom: 4rem;
     }
 
     .card-img-container-gradient {
@@ -783,7 +785,7 @@ footer {
 
     .section-three-heading {
         text-align: center;
-        padding: 64px 0 16px 0;
+        padding: 4rem 0 1rem 0;
     }
 
     .standard-arrows {
@@ -795,28 +797,28 @@ footer {
         width: 400px;
         height: 550px;
         margin: 0 calc((100vw - 400px) / 2);
-        padding: 0 16px;
+        padding: 0 1rem;
     }
 
     //section 4
     .section-four-heading {
-        padding: 64px 16px;
+        padding: 4rem 1rem;
         text-align: center;
     }
 
     .section-four-card {
         max-width: 400px;
-        margin: 0 auto 64px auto;
+        margin: 0 auto 4rem auto;
     }
 
     //section 5
 
     .section-five {
-        padding: 64px 0;
+        padding: 4rem 0;
     }
 
     .mobile-phone-icon {
-        margin-right: 16px;
+        margin-right: 1rem;
     }
 
     .section-five-buttons {
@@ -832,7 +834,7 @@ footer {
     }
 
     .section-five-all-button-container {
-        margin: 64px auto 0 auto;
+        margin: 4rem auto 0 auto;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -842,19 +844,19 @@ footer {
     .section-five-primary-button-container {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .section-five-secondary-button-container {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     //footer
 
     footer {
-        padding: 64px 32px 0 32px;
+        padding: 4rem 2rem 0 2rem;
     }
 
     .footer-logo-container {
@@ -881,8 +883,8 @@ footer {
     }
 
     .footer-hr {
-        margin: 64px auto 24px auto;
-        width: calc(100vw - 64px);
+        margin: 4rem auto 1.5rem auto;
+        width: calc(100vw - 4rem);
     }
 }
 
@@ -959,7 +961,7 @@ footer {
 
     .hero-section {
         grid-template-rows: 100px 1fr 3fr 1fr 2fr 3fr;
-        padding: 0 64px;
+        padding: 0 4rem;
         margin: 0;
         overflow-y: hidden;
     }
@@ -972,7 +974,7 @@ footer {
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
-        gap: 32px;
+        gap: 2rem;
     }
 
     #hero-secondary-button {
@@ -987,7 +989,11 @@ footer {
 
     .section-two-image {
         width: auto;
-        margin: 0 64px;
+        margin: 0 4rem;
+    }
+
+    .section-two-subheading, .section-two-paragraph {
+        padding: 0 2.5rem 2.5rem 4rem;
     }
 
     // section three
@@ -1002,13 +1008,17 @@ footer {
 
     //section four
 
+    .section-four {
+        padding-bottom: 4rem;
+    }
+
     .section-four-cards-container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 16px;
-        padding: 0 64px;
+        gap: 1rem;
+        padding: 0 4rem;
     }
 
     .section-four-card {
@@ -1029,29 +1039,29 @@ footer {
 
     .section-five-all-button-container {
         margin: 0;
-        padding: 0 64px 0 0;
+        padding: 0 4rem 0 0;
     }
 
     .section-five-phone-container {
         justify-content: flex-start;
-        padding: 0 0 0 64px;
+        padding: 0 0 0 4rem;
     }
 
     //footer
 
     footer {
-        padding: 64px 64px 0 64px;
+        padding: 4rem 4rem 0 4rem;
     }
 
     .footer-hr {
-        width: calc(100vw - 128px);
+        width: calc(100vw - 8rem);
     }
 
     .link-lists-container {
         width: 50%;
         display: flex;
         justify-content: flex-end;
-        gap: 64px;
+        gap: 4rem;
     }
     .second-link-list-container.tablet {
         display: none !important;
