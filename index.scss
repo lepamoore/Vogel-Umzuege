@@ -47,6 +47,18 @@ $Shade1000: #fff;
     display: none;
 }
 
+.main-link-list {
+    * {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $Shade000;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400;

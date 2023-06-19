@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Vogel Umzüge bietet Ihnen einen zuverlässigen und preisgünstigen Umzugsservice in Köln und ganz Deutschland. Mit unserer langjährigen Erfahrung und Bestpreisgarantie kümmern wir uns um Ihren Privatumzug, Firmenumzug, Entrümpelung oder Einlagerung. Unsere erfahrenen Möbelpacker sorgen für eine sorgfältige Planung, sicheren Transport und professionelle Montage. Verlassen Sie sich auf unseren Rundum-Sorglos-Service und entspannen Sie während wir Ihren Umzug effizient und stressfrei abwickeln. Kontaktieren Sie uns jetzt für ein unverbindliches Angebot.">
+    <link rel="icon" type="image/x-icon" href="./assets/Logos/favicon.ico" sizes="128x128">
+    <link rel="stylesheet" href="./index.min.css">
+    <link href="./widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" defer async></script>
+    <title>Vogel Umzüge | Köln</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner-container">
+            <div class="header-logo-container">
+                <a href="./index.html">
+                    <img src="./assets/Logos/Logo Quadrat.png" alt="Logo" class="header-logo">
+                </a>
+            </div>
+            <div class="header-burger-container" id="header-burger-container">
+                <img role="button" src="./assets/Logos/burger.svg" alt="Open the Menu" class="header-burger-icon"
+                    id="header-burger-icon">
+                <img role="button" src="./assets/Logos/cross.svg" alt="Open the Menu" class="header-cross-icon"
+                    id="header-cross-icon">
+            </div>
+            <nav id="nav">
+                <div role="button" class="nav-link-container nav-link-container-start">
+                    <a class="nav-link nav-text" href="./index.html#hero-section">Start</a>
+                </div>
+                <hr class="nav-hr" />
+                <div role="button" class="nav-link-container">
+                    <a class="nav-link nav-text" href="./index.html#section-two">Über uns</a>
+                </div>
+                <hr class="nav-hr" />
+                <div role="button" class="nav-link-container"">
+                    <a class="nav-link nav-text" href="./index.html#section-three">Leistungen</a>
+                </div>
+                <div class="nav-logo-container">
+                    <a href="./index.html">
+                        <img src="./assets/Logos/Logo Quadrat.png" alt="Logo" class="nav-logo">
+                    </a>
+                </div>
+                <hr class="nav-hr" />
+                <div role="button" class="nav-link-container"">
+                    <a class="nav-link nav-text" href="./index.html#section-four">Warum wir?</a>
+                </div>
+                <div class="nav-button-container">
+                    <button class="nav-button first-level-button"
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">Termin
+                        vereinbaren</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 style="margin-top: 100px">Datenschutz</h1>
+    </main>
+    <footer>
+        <div class="footer-above-hr">
+            <div class="footer-logo-container">
+                <img src="./assets/Logos/Logo in weiss.png" alt="Vogel Umzüge Logo." id="footer-logo" loading="lazy">
+            </div>
+            <div class="link-lists-container">
+                <div class="main-link-list-container">
+                    <ul class="main-link-list">
+                        <li class="footer-links nav-text" role="button"><a href="./index.html">START</a></li>
+                        <li class="footer-links nav-text" role="button"><a href="./index.html#section-two">ÜBER UNS</a></li>
+                        <li class="footer-links nav-text" role="button"><a href="./index.html#section-three">LEISTUNGEN</a></li>
+                        <li class="footer-links nav-text" role="button"><a href="./index.html#section-four">WARUM WIR?</a></li>
+                        <li class="footer-links nav-text" role="button"
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/leonmoore029/30min'});return false;">
+                            TERMIN VEREINBAREN</li>
+                    </ul>
+                </div>
+                <div class="second-link-list-container mobile desktop">
+                    <ul class="second-link-list">
+                        <a href="./datenschutz.html" class="phone-link">
+                            <li role="button" class="footer-links nav-text">DATENSCHUTZ</li>
+                        </a>
+                        <a href="./impressum.html" class="phone-link">
+                            <li role="button" class="footer-links nav-text">IMPRESSUM</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="second-link-list-container tablet">
+                <ul class="second-link-list">
+                    <a href="./datenschutz.html" class="phone-link">
+                        <li role="button" class="footer-links nav-text">DATENSCHUTZ</li>
+                    </a>
+                    <a href="./impressum.html" class="phone-link">
+                        <li role="button" class="footer-links nav-text">IMPRESSUM</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-hr-container">
+            <hr class="footer-hr" />
+        </div>
+        <div class="copyright-text-container">
+            <span class="copyright-text">&copy; 2023 Vogel Umzüge</span>
+        </div>
+    </footer>
+    <script defer>
+        function handleMenuClick(e) {
+            const element = document.getElementById("header-burger-icon");
+            const crossElement = document.getElementById("header-cross-icon");
+            const navElement = document.getElementById("nav");
+            const computedStyle = window.getComputedStyle(element);
+            const opacityValue = computedStyle.getPropertyValue("opacity");
+
+            if (opacityValue === "1") {
+                element.style.opacity = "0";
+                crossElement.style.opacity = "1";
+                navElement.style.left = "0";
+            } else {
+                element.style.opacity = "1";
+                crossElement.style.opacity = "0";
+                navElement.style.left = "100vw";
+            }
+        }
+
+        document
+            .getElementById("header-burger-container")
+            .addEventListener("click", handleMenuClick);
+
+    </script>
+</body>
+
+</html>
