@@ -3,8 +3,7 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(./assets/Fonts/Barlow-Regular.ttf)
-        format("ttf");
+    src: url(./assets/Fonts/Barlow-Regular.ttf) format("ttf");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
         U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -14,8 +13,7 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url(./assets/Fonts/Barlow-Bold.ttf)
-        format("ttf");
+    src: url(./assets/Fonts/Barlow-Bold.ttf) format("ttf");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
         U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -97,12 +95,18 @@ html {
     font-size: 100%;
 }
 
-button:hover, .footer-links:hover, .nav-link:hover, .nav-logo:hover {
+button:hover,
+.footer-links:hover,
+.nav-link:hover,
+.nav-logo:hover {
     cursor: pointer;
     scale: 1.05;
 }
-button, .footer-links, .nav-link, .nav-logo {
-    transition: scale .25s;
+button,
+.footer-links,
+.nav-link,
+.nav-logo {
+    transition: scale 0.25s;
 }
 
 header {
@@ -224,7 +228,7 @@ nav {
     border: none;
     background-color: $Primary400;
     color: $Shade000;
-    transition: scale .5s;
+    transition: scale 0.5s;
     &:active {
         background-color: $Primary600;
     }
@@ -241,7 +245,7 @@ nav {
     border: none;
     background-color: $Primary800;
     color: $Shade000;
-    transition: scale .5s;
+    transition: scale 0.5s;
     &:active {
         background-color: $Primary1000;
     }
@@ -306,7 +310,7 @@ nav {
 // Section 2
 
 .section-two {
-    background-color: $Primary800;
+    background-color: $Primary400;
 }
 
 .section-two-heading {
@@ -315,7 +319,7 @@ nav {
 }
 
 .section-two-snippet-two {
-    background-color: $Primary1000;
+    background-color: $Shade1000;
 }
 
 .section-two-image {
@@ -392,7 +396,7 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 1;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
     &:hover {
         cursor: pointer;
     }
@@ -409,7 +413,7 @@ nav {
     align-items: center;
     justify-content: center;
     opacity: 0.25;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
     &:hover {
         cursor: pointer;
     }
@@ -417,14 +421,14 @@ nav {
 
 #arrow-left-standard {
     display: none;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
     &:hover {
         cursor: pointer;
     }
 }
 #arrow-right-standard {
     display: none;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
     &:hover {
         cursor: pointer;
     }
@@ -433,7 +437,7 @@ nav {
 // Section 4
 
 .section-four {
-    background-color: $Primary800;
+    background-color: $Primary400;
     padding-bottom: 3rem;
 }
 
@@ -449,7 +453,7 @@ nav {
     margin: 0 1rem 2rem 1rem;
     height: 295px;
     text-align: center;
-    transition: background-color .25s, color .25s, border-color .25s;
+    transition: background-color 0.25s, color 0.25s, border-color 0.25s;
     &:hover {
         background-color: $Primary000;
         color: $Shade1000;
@@ -747,7 +751,6 @@ footer {
         padding-bottom: 4rem;
     }
 
-
     .section-three-card-heading {
         padding: 0;
     }
@@ -943,7 +946,6 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 1024px) {
     #hero-section,
     #section-two,
@@ -1046,7 +1048,8 @@ footer {
         margin: 0 4rem;
     }
 
-    .section-two-subheading, .section-two-paragraph {
+    .section-two-subheading,
+    .section-two-paragraph {
         padding: 0 4rem 2.5rem 4rem;
         left: 50%;
     }
