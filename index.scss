@@ -484,9 +484,17 @@ nav {
 
 .section-five-phone-container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 100%;
+}
+
+.inner-section-five-phone-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    padding: 1rem;
 }
 
 .phone-link {
